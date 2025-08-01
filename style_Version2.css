@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', 'Montserrat', Arial, sans-serif;
+  background: #f5f9fa;
+  color: #1a2333;
+}
+header {
+  background: #fff;
+  box-shadow: 0 2px 12px #0001;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #50b24a22;
+}
+.site-title {
+  font-size: 2rem;
+  color: #50b24a;
+  font-weight: bold;
+  margin-left: 14px;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+  letter-spacing: 2px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #1a2333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #50b24a;
+  transition: width .2s;
+  position: absolute;
+  bottom: -4px; left: 0;
+}
+.nav-links a:hover {
+  color: #50b24a;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(120deg, #e8f6ef 0%, #c0ebfc 100%);
+  text-align: center;
+  padding: 84px 0 56px 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero-logo {
+  width: 120px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px #50b24a28;
+  border: 2px solid #fff;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.hero h1 .sub {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: normal;
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+.gradient-text {
+  background: linear-gradient(90deg,#50b24a 20%,#1ba1e2 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.catch {
+  font-size: 1.4rem;
+  color: #1a2333cc;
+  margin-bottom: 32px;
+  margin-top: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.catch span {
+  display: inline-block;
+  margin: 0 2px;
+}
+.discord-btn {
+  background: linear-gradient(90deg,#50b24a,#1ba1e2);
+  color: #fff;
+  padding: 15px 42px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.18rem;
+  font-weight: bold;
+  box-shadow: 0 4px 24px #50b24a32;
+  transition: background 0.2s, transform 0.13s, box-shadow 0.2s;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.discord-btn:hover {
+  background: linear-gradient(90deg,#1ba1e2,#50b24a);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #1ba1e233;
+}
+.scroll-down {
+  font-size: 2rem;
+  color: #1ba1e2aa;
+  margin-top: 40px;
+  animation: scrollDown 1.6s infinite;
+}
+@keyframes scrollDown {
+  0% {transform: translateY(0);}
+  60% {transform: translateY(10px);}
+  100% {transform: translateY(0);}
+}
+
+/* セクションごとに背景や装飾を変える */
+section {
+  margin: 0 auto 0 auto;
+  max-width: 900px;
+  padding: 52px 14px 0 14px;
+}
+.about {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 28px #77e0c133;
+  margin-top: -40px;
+  margin-bottom: 44px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+.bots {
+  background: linear-gradient(120deg,#e8f6ef 80%,#fafffd 100%);
+  border-radius: 26px;
+  box-shadow: 0 4px 24px #1ba1e222;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+}
+.bot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.card.bot-card {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px #1ba1e220;
+  padding: 24px 30px;
+  width: 270px;
+  margin-bottom: 10px;
+  transition: transform 0.13s, box-shadow 0.2s;
+}
+.card.bot-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 30px #50b24a29;
+}
+.invite-link {
+  color: #1ba1e2;
+  text-decoration: underline;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.2s;
+}
+.invite-link:hover {
+  color: #50b24a;
+}
+
+.team {
+  background: #e8f6ef;
+  border-radius: 26px;
+  box-shadow: 0 4px 18px #50b24a22;
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+}
+.member-list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card.member-card {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px #50b24a22;
+  padding: 20px 28px;
+  width: 210px;
+  margin-bottom: 10px;
+  transition: transform 0.13s, box-shadow 0.2s;
+}
+.card.member-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px #1ba1e229;
+}
+h2 {
+  color: #50b24a;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #e0e0e0;
+  display: inline-block;
+  padding-bottom: 4px;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+}
+.news {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px #0001;
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+}
+.news ul {
+  padding-left: 22px;
+  font-size: 1.1rem;
+  color: #222;
+}
+.news .date {
+  color: #50b24a;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.contact {
+  background: #f5f5f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px #0001;
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.contact a {
+  color: #1ba1e2;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.contact a:hover {
+  color: #50b24a;
+}
+
+footer {
+  background: #f0f0f0;
+  color: #888;
+  text-align: center;
+  padding: 30px 0 14px 0;
+  font-size: 1.1rem;
+  margin-top: 64px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-content a {
+  color: #1ba1e2;
+  text-decoration: none;
+  margin: 0 7px;
+  transition: color 0.2s;
+}
+.footer-content a:hover {
+  color: #50b24a;
+  text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 900px) {
+  .bot-list, .member-list {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 10px;
+  }
+  .site-title {
+    font-size: 1.3rem;
+  }
+  .logo {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  .hero-logo {
+    width: 75px;
+  }
+  section {
+    padding: 32px 4vw 0 4vw;
+  }
+  .card.bot-card, .card.member-card {
+    width: 96vw;
+    max-width: 340px;
+    padding: 18px 10px;
+  }
+}
