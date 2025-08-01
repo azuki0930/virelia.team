@@ -1,0 +1,28 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50b24a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1ba1e2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#logoGradient)" stroke="#fff" stroke-width="3"/>
+  
+  <!-- V letter -->
+  <path d="M 30 35 L 45 75 L 60 35 L 75 75 L 90 35" 
+        stroke="#fff" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  
+  <!-- Bot elements - small circles representing connectivity -->
+  <circle cx="40" cy="85" r="3" fill="#fff" opacity="0.8"/>
+  <circle cx="60" cy="85" r="3" fill="#fff" opacity="0.8"/>
+  <circle cx="80" cy="85" r="3" fill="#fff" opacity="0.8"/>
+  
+  <!-- Connection lines -->
+  <line x1="40" y1="85" x2="60" y2="85" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="85" x2="80" y2="85" stroke="#fff" stroke-width="2" opacity="0.6"/>
+</svg>
